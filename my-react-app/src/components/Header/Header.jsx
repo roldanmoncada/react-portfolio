@@ -5,10 +5,6 @@ function Header({ currentPage, handlePageChange }) {
   return (
     <>
       <nav>
-        <input type="checkbox" id="check" />
-        <label htmlFor="check" className="checkbtn">
-          🧮 
-        </label>
         <label className="logo">Roldan Navarrete </label>
         <ul className="ul">
           <li>

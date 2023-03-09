@@ -6,10 +6,7 @@ export default function Footer() {
     <footer>
       <div className="footerWrapper">
         <p className="footerTitle">
-          <strong>Junior Full-Stack Portfolio</strong> - {" "}
-          <a className="footerName" href="https://github.com/roldanmoncada" target="_blank" rel="noreferrer">
-            Roldan Navarrete
-          </a>
+          <strong className='footerStrong'>Junior Full-Stack Portfolio</strong>
         </p>
       </div>
       <hr />

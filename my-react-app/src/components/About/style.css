@@ -5,16 +5,13 @@
     text-align: center;
     line-height: 1.5;
     letter-spacing: 1px;
+    color: #000;
   }
   
   .aboutWrapper {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('../../images/fotis-fotopoulos-SyvsTmuuZyM-unsplash.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: lavender;
     color: #fff;
 
   }
@@ -26,12 +23,13 @@
     font-size: 50px;
     font-weight: 800;
     text-transform: uppercase;
+    color: black;
   }
   article h1::after {
     content: "";
     height: 5px;
     width: 225px;
-    background-color: #fff;
+    background-color: black;
     display: block;
     margin: auto;
   }
@@ -48,9 +46,15 @@
     font-family: sans-serif;
     font-size: 22px;
     margin-top: 30px;
+    color: black;
   }
   
   article p {
-    font-size: 20px;
-    margin-top: 25px;
+    font-size: 25px;
+    margin-top: 100px;
+    color: black;
+  }
+
+  .footerStrong {
+    color: white
   }

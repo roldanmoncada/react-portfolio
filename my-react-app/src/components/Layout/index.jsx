@@ -1,6 +1,6 @@
 import About from "../About";
 import Contact from "../Contact";
-import Projects from "../Projects";
+import Portfolio from "../Portfolio";
 import Header from "../Header/Header";
 import React, {useState} from "react";
 
@@ -13,7 +13,7 @@ export default function Layout() {
       return <About />;
     }
     if (currentPage === "Projects") {
-      return <Projects />;
+      return <Portfolio />;
     }
     if (currentPage === "Contact") {
       return <Contact />;

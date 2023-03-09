@@ -1,47 +1,58 @@
-import React, {useState} from 'react'
+import React, {useRef} from 'react'
 import "./style.css"
+import emailjs from '@emailjs/browser'
+import Swal from "sweetalert2";
+
 
 
 export default function Contact() {
-  const [email, setEmail] = useState('');
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Email submitted:', email);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3pb4ym8",
+        "template_1dtzrjj",
+        form.current,
+        "UtS5wF4XdHFhXqFWX"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Email sent!",
+            showConfirmButton: true,
+          });
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
-
-  const handleChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleDownload = () => {
-    const filePath = '/path/to/resume.pdf';
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.download = 'resume.pdf';
-    link.click();
-  };
-
-
 
   return (
-    <>
-    <div className='contact-form-wrapper'>
- <form className='email-me' onSubmit={handleSubmit}>
-      <div>Contact Me</div>
-      <label htmlFor="email">Email:</label>
-      <input className='contact-input'
-        type="email"
-        id="email"
-        name="email"
-        value={email}
-        onChange={handleChange}
-        required
-      />
-      <textarea className='contact-textarea' placeholder='yes'></textarea>
-      <button className='contact-button' type="submit">Submit</button>
-    </form>
+    <div className="containerContact">
+      <form ref={form} onSubmit={sendEmail}>
+        <h2>Contact Me</h2>
+
+        <input type="text" name="from_name" placeholder="Name" />
+
+        <input
+          type="email"
+          name="reply_to"
+          placeholder="name@mail.com"
+          id="email"
+        />
+
+        <h4>Input your message to the box below:</h4>
+        <textarea className='contactText' name="message" />
+        <input type="submit" value="Send" id="button" />
+      </form>
     </div>
-    <button onClick={handleDownload}>Download My Resume Here!</button>
-    </>
-  )
+  );
 }

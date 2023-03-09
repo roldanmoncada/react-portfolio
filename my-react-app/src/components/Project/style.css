@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #FDB927
+  }
+  
+  #containerProject .card {
+    position: relative;
+    max-width: 500px;
+    height: 255px;
+    background: #552583;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3 ease-in-out;
+  }
+  #containerProject .card:hover {
+    height: 550px;
+  }
+  
+  #containerProject .card .imgbx {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  #containerProject .card .imgbx img {
+    width: 100%;
+    height: 270px;
+    border-radius: 4px;
+  }
+  
+  #containerProject .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #FDB927;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  #containerProject .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3;
+  }
+  
+  .languages {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bolder;
+  }
+  .link {
+    border: solid black 2px;
+    padding: 15px;
+  }
+  
+  .containerProject1 a {
+    margin-top: 30px;
+    color: black;
+    font-weight: bold;
+  }
