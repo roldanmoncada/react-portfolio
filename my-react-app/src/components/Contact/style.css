@@ -1,0 +1,29 @@
+.email-me {
+    background-color: fuchsia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    border-radius: 5rem;
+    padding: 2rem;
+}
+
+.email-me > * {
+    flex: 1;
+}
+
+.email-me div {
+    font-size: 2em;
+}
+
+.contact-form-wrapper {
+    background-color: aquamarine;
+    height: 70vh;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.contact-input {
+    background-color: aquamarine;
+    max-width: 20rem;
+}

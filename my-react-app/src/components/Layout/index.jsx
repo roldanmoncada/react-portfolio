@@ -1,8 +1,9 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
+import About from "../About";
+import Contact from "../Contact";
+import Projects from "../Projects";
+import Header from "../Header/Header";
+import React, {useState} from "react";
 
-import React from "react";
 
 export default function Layout() {
   const [currentPage, setCurrentPage] = useState("About");

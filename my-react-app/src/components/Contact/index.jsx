@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-// import "./style.css"
+import "./style.css"
 
 
 export default function Contact() {
@@ -25,10 +25,11 @@ export default function Contact() {
 
   return (
     <>
-    <div>Contact Me</div>
-    <form onSubmit={handleSubmit}>
+    <div className='contact-form-wrapper'>
+ <form className='email-me' onSubmit={handleSubmit}>
+      <div>Contact Me</div>
       <label htmlFor="email">Email:</label>
-      <input
+      <input className='contact-input'
         type="email"
         id="email"
         name="email"
@@ -36,9 +37,10 @@ export default function Contact() {
         onChange={handleChange}
         required
       />
-      <textarea placeholder='yes'></textarea>
-      <button type="submit">Submit</button>
+      <textarea className='contact-textarea' placeholder='yes'></textarea>
+      <button className='contact-button' type="submit">Submit</button>
     </form>
+    </div>
     <button onClick={handleDownload}>Download My Resume Here!</button>
     </>
   )

@@ -1,17 +1,13 @@
-import About from "./components/About"
-import Contact from "./components/Contact"
+import Layout from "./components/Layout"
 import Footer from "./components/Footer"
-import Nav from "./components/Nav"
-import Projects from "./components/Projects"
+
+
 
 function App() {
 
   return (
     <>
-    < Nav />
-     < About /> 
-     < Projects />
-     < Contact />
+    < Layout />
      < Footer />
     </>
   )
