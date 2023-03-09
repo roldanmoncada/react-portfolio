@@ -24,6 +24,7 @@ export default function Layout() {
 
     return <About />;
   };
+  
   const handlePageChange = (page) => setCurrentPage(page);
   return (
     <div>

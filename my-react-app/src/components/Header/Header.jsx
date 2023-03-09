@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./style.css"
 
 function Header({ currentPage, handlePageChange }) {
   return (
@@ -41,7 +41,7 @@ function Header({ currentPage, handlePageChange }) {
               Contact
             </a>
           </li>
-          🧮 
+          🏀 
         </ul>
       </nav>
     </>
