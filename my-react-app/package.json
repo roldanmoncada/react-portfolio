@@ -1,5 +1,6 @@
 {
-  "name": "my-react-app",
+  "homepage": "https://github.com/roldanmoncada/react-portfolio",
+  "name": "react-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "start": "react-scripts start",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
