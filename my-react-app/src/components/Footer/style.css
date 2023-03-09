@@ -11,12 +11,12 @@ footer {
   }
 
   .footerTitle {
-    text-shadow: 0 0 5px #552583;;;
+    text-shadow: 0px 0px 5px #552583;
     color: white;
   }
 
   .footerName {
-    text-shadow: 0 0 4px #552583;;
+    text-shadow: 0 0 5px #552583;;
     color: white;
   }
   
@@ -27,7 +27,7 @@ footer {
 
   .linkContainerOne {
     color: white;
-    text-shadow: 0 0 4px black;;
+    text-shadow: 0 0 4px #552583;
   }
 
   .linkContainerOne.active,
@@ -41,7 +41,7 @@ footer {
 
   .linkContainerTwo {
     color: white;
-    text-shadow: 0 0 4px black;;
+    text-shadow: 0 0 4px #552583;;
   }
 
   .linkContainerTwo.active,

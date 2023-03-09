@@ -13,6 +13,7 @@ export default function Footer() {
         </p>
       </div>
       <hr />
+      <hr />
       <div className="footerLinks">
         <a className='linkContainerOne' href="https://www.linkedin.com/in/roldannavarrete/"> Linkedin</a> ||{" "}
         <a className='linkContainerTwo' href="https://github.com/roldanmoncada"> GitHub</a>
