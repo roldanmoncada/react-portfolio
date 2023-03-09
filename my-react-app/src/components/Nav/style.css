@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.nav-wrapper >* {
+    flex: 1;
+}
+
+.nav-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-content li {
+    list-style: none;
+}

@@ -1,0 +1,15 @@
+.portfolio {
+    height: auto;
+    background-color: lavender;
+  }
+  .center {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .containerPortfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
